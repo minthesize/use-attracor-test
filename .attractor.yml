@@ -1,6 +1,3 @@
-branches:
-  only:
-    - main
 report:
   app_root: app
   minimum_churn: 1
