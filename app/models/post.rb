@@ -8,4 +8,8 @@ class Post < ApplicationRecord
   def formatted_body
     simple_format body
   end
+
+  def add_like
+    likes.increment
+  end
 end
