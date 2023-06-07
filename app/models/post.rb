@@ -4,4 +4,8 @@ class Post < ApplicationRecord
   def to_s
     "#{title} by #{author}"
   end
+
+  def formatted_body
+    simple_format body
+  end
 end
