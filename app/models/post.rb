@@ -6,7 +6,7 @@ class Post < ApplicationRecord
   end
 
   def to_param
-    "#{title}-#{author}"
+    "#{title}"
   end
 
   def formatted_body
