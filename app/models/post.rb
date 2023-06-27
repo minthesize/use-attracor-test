@@ -5,6 +5,10 @@ class Post < ApplicationRecord
     "#{title} by #{author}"
   end
 
+  def to_param
+    "#{title}-#{author}"
+  end
+
   def formatted_body
     simple_format body
   end
