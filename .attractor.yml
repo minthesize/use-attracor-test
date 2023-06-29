@@ -1,0 +1,13 @@
+branches:
+  only:
+    - post-model
+report:
+  app_root: app
+  minimum_churn: 1
+  ignore:
+    - bin
+    - config
+    - db
+    - spec
+    - test
+  start_ago: 1y
