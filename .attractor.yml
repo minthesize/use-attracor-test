@@ -1,6 +1,6 @@
 branches:
   only:
-    - post-model
+    - main
 report:
   app_root: app
   minimum_churn: 1
