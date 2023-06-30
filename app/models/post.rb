@@ -1,4 +1,6 @@
 class Post < ApplicationRecord
+  has_many :sections
+
   validates :title, :author, presence: true
 
   def to_s
