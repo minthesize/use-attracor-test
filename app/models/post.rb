@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-  has_many :sections
+  has_many :sections, dependent: :destroy
 
   validates :title, :author, presence: true
 
