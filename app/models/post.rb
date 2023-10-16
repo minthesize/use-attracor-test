@@ -18,4 +18,8 @@ class Post < ApplicationRecord
   def add_like
     likes.increment
   end
+
+  def sections_char_count
+    sections.sum { _1.body.length }
+  end
 end
